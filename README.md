@@ -7,6 +7,15 @@ This repository contains the **WordArt-V1.5** dataset, created for the **ICDAR 2
 
 ## Overview
 
+<div align="left">
+    <picture>
+        <img
+            src="https://github.com/lucas-azdias/Artistic-Text-Recognition/raw/main/thumbnails/dataset-examples.png"
+            height="300px"
+        />
+    </picture>
+</div>
+
 The competition focused on the **recognition of text in artistic and stylized images** — a challenging problem that combines aspects of OCR, computer vision, and typography understanding.
 
 **WordArt-V1.5** includes a wide variety of:
