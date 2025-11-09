@@ -1,19 +1,44 @@
 # WordArt-V1.5 Dataset
 
-This repository contains the **ICDAR 2024 Competition on Artistic Text Recognition** dataset **WordArt-V1.5**.
+**ICDAR 2024 Competition on Artistic Text Recognition**
 
-The competition focuses on recognizing text from artistic and stylized images.
-The dataset includes a variety of text styles, fonts, and artistic designs commonly found in creative media such as posters, advertisements, and digital art.
+This repository contains the **WordArt-V1.5** dataset, created for the **ICDAR 2024 Competition on Artistic Text Recognition**.
 
-This dataset was originally released as part of the official ICDAR competition and is provided here for research and reproducibility purposes.
+
+## Overview
+
+The competition focused on the **recognition of text in artistic and stylized images** — a challenging problem that combines aspects of OCR, computer vision, and typography understanding.
+
+**WordArt-V1.5** includes a wide variety of:
+- Artistic and decorative text styles,
+- Diverse fonts and visual distortions,
+- Real-world and synthetic samples from creative media such as posters, advertisements, and digital artwork.
+
+
+## Related Research
+
+This dataset was used in the paper:  
+> **Evaluating State-of-the-Art Approaches to Artistic Text Recognition**  
+> Available [here](https://github.com/lucas-azdias/Artistic-Text-Recognition)
+
+
+## Purpose
+
+The dataset was originally released as part of the **official ICDAR 2024 competition** and is provided here **for research and reproducibility purposes**.
+
 
 ## Dataset Composition
-- Train: 6,000 images
-- Test A: 3,000 images
-- Test B: 3,000 images
+
+| Split   | Number of Images |
+|:--|:--|
+| **Train** | 6,000 |
+| **Test A** | 3,000 |
+| **Test B** | 3,000 |
+
+Total: 12,000 images.
 
 ## Annotation Format
-Each part of the dataset includes a `labels.txt` file containing image paths and corresponding text labels per line.
+Each split of the dataset includes a `labels.txt` file containing image paths and corresponding text labels in each line.
 ```
 images/320.png Ford
 images/355.png PARA
@@ -21,9 +46,12 @@ images/356.png JUNIPER
 ...
 ```
 
+
 ## Competition links
-- [Competition](https://sites.google.com/view/icdar-2024-competition-wordart/)
-- [Competition results](https://codalab.lisn.upsaclay.fr/competitions/17182#participate)
-- [Train dataset](https://drive.google.com/file/d/1Lq6xKNbD7Kvs-i1myJPmwBLLG5YnoM9N/view)
-- [TestA dataset](https://drive.google.com/file/d/15tkLbdXYzIILVWIg4kqjPMJ51p-vD2Ej/view)
-- [TestB dataset](https://drive.google.com/file/d/1Q7kAqFITGntZAn-HuCh8vQpHTpDkPSAH/view)
+| Resource | Link |
+|:--|:--|
+| **Competition Page** | [View here](https://sites.google.com/view/icdar-2024-competition-wordart/) |
+| **Competition Results** | [View on CodaLab](https://codalab.lisn.upsaclay.fr/competitions/17182#participate) |
+| **Train Dataset** | [Download](https://drive.google.com/file/d/1Lq6xKNbD7Kvs-i1myJPmwBLLG5YnoM9N/view) |
+| **Test A Dataset** | [Download](https://drive.google.com/file/d/15tkLbdXYzIILVWIg4kqjPMJ51p-vD2Ej/view) |
+| **Test B Dataset** | [Download](https://drive.google.com/file/d/1Q7kAqFITGntZAn-HuCh8vQpHTpDkPSAH/view) |
