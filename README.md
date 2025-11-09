@@ -46,12 +46,50 @@ The dataset was originally released as part of the **official ICDAR 2024 competi
 
 Total: 12,000 images.
 
+
 ## Annotation Format
 Each split of the dataset includes a `labels.txt` file containing image paths and corresponding text labels in each line.
 ```
 images/320.png Ford
 images/355.png PARA
 images/356.png JUNIPER
+...
+```
+
+There is also a structured MMOCR JSON-based annotation format (`.json` / `.jsonl`) used by MMOCR for text recognition datasets.
+```
+// JSON
+{
+    "metainfo": {
+        "dataset_type": "TextRecogDataset",
+        "task_name": "textrecog"
+    },
+    "data_list": [
+        {
+            "instances": [
+                {
+                    "text": "Ford"
+                }
+            ],
+            "img_path": "full_images/train/images/320.png"
+        },
+        {
+            "instances": [
+                {
+                    "text": "PARA"
+                }
+            ],
+            "img_path": "full_images/train/images/355.png"
+        },
+        ...
+    ]
+}
+```
+```
+// JSONL
+{"filename": "full_images/train/images/320.png", "text": "Ford"}
+{"filename": "full_images/train/images/355.png", "text": "PARA"}
+{"filename": "full_images/train/images/356.png", "text": "JUNIPER"}
 ...
 ```
 
